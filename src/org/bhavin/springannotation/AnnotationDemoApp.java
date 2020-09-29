@@ -9,7 +9,7 @@ public class AnnotationDemoApp {
 		ClassPathXmlApplicationContext context = 
 				new ClassPathXmlApplicationContext("applicatonContext.xml");
 		//get the bean from spring container
-		Coach theCoach = context.getBean("thatTennisCoach", Coach.class);
+		Coach theCoach = context.getBean("tennisCoach", Coach.class);
 		//call a method
 		System.out.println(theCoach.getDailyWorkout());
 		//close context
